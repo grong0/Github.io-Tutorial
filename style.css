@@ -30,7 +30,7 @@ body {
 
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
+    margin-bottom: 40px;
 }
 .content-wrapper {
     border-radius: 12px;
