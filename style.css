@@ -1,0 +1,147 @@
+body {
+    background: linear-gradient(45deg, #04364A, #176B87);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    top: 0;
+    padding-top: 10%;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+#wrapper {
+    display: grid;
+    width: 1000px;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 32px;
+    gap: 12px;
+    border-radius: 12px;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.7));
+    background-color: #64CCC5;
+    box-sizing: border-box;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.content-wrapper {
+    border-radius: 12px;
+    background-color: #DAFFFB;
+    padding: 12px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+h2 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+}
+p {
+    font-size: medium;
+    font-weight: normal;
+}
+#about-me {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    height: 100%;
+    width: 100%;
+}
+#special {
+    font-family: 'Pacifico', cursive;
+}
+#what-i-want-to-learn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    height: 100%;
+    width: 100%;
+}
+#my-favorite-food {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    height: 100%;
+    width: 100%;
+}
+#food-desc-wrapper {
+
+}
+#favorite-food {
+
+}
+#favorite-food img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+
+    border-radius: 12px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #64CCC5;
+    left: 0;
+}
+
+@media only screen and (max-width: 1500px) {
+    body {
+        height: auto;
+        overflow-y: visible;
+    }
+    .wrapper {
+        width: 100px;
+    }
+    footer {
+        position: unset;
+    }
+    #wrapper{ 
+        width: 80vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%;
+    }
+    #about-me {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #what-i-want-to-learn {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #my-favorite-food {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
